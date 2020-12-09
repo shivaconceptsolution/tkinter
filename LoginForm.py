@@ -1,0 +1,16 @@
+import tkinter as tk
+
+window = tk.Tk()
+window.geometry("300x250")
+window.title("Login Form")
+label1 = tk.Label(text="Enter username")
+label1.grid(row=0,column=0)
+txt = tk.Entry(text=" ",textvariable='uname')
+txt.grid(row=0,column=1)
+label2 = tk.Label(text="Enter password")
+label2.grid(row=1,column=0)
+txt2 = tk.Entry(text=" ",textvariable='pa')
+txt2.grid(row=1,column=1)
+btn = tk.Button(text="Login")
+btn.grid(row=2,column=1)
+window.mainloop()
